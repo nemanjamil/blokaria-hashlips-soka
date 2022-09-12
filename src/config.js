@@ -28,9 +28,9 @@ const layerConfigurations = [
     layersOrder: [
       { name: "BASEBODY" },
       { name: "SKIN" },
+      { name: "ITEM" },
       { name: "CLOTHES" },
-      { name: "AURA" },
-      { name: "ITEM" }
+      { name: "AURA" }
     ],
   },
   {
@@ -38,8 +38,8 @@ const layerConfigurations = [
     layersOrder: [
       { name: "BASEBODY" },
       { name: "SKIN" },
-      { name: "CLOTHES" },
       { name: "ITEM" },
+      { name: "CLOTHES" },
       { name: "NECKLACE" },
       { name: "SCARF" }
     ],
