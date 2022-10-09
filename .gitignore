@@ -39,7 +39,7 @@ coverage
 
 bower_components
 
-# node-waf configuration
+# node-waf configuration test
 
 .lock-wscript
 
