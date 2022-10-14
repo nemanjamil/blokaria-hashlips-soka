@@ -29,7 +29,7 @@ const layerConfigurations = [
       { name: "BASEBODY" },
       { name: "SKIN" },
       { name: "ITEM" },
-      { name: "ITEM_SWORD" },
+      // { name: "ITEM_SWORD" },
       { name: "SHIRT" },
       { name: "SHOES" },
       { name: "PANTS" },
