@@ -5,14 +5,14 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "Your Collection";
+const namePrefix = "Miki Collection";
 const description = "Remember to replace this description";
 const baseUri = "ipfs://NewUriToReplace";
 
 const solanaMetadata = {
-  symbol: "YC",
+  symbol: "MT",
   seller_fee_basis_points: 1000, // Define how much % you want from secondary market sales 1000 = 10%
-  external_url: "https://www.youtube.com/c/hashlipsnft",
+  external_url: "https://blokaria.com",
   creators: [
     {
       address: "7fXNuer5sbZtaTEPhtJ5g5gNtuyRoKkvxdjEjEnPN4mC",
@@ -24,39 +24,39 @@ const solanaMetadata = {
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 3,
+    growEditionSizeTo: 5,
     layersOrder: [
-      { name: "BASEBODY" },
-      { name: "SKIN" },
-      { name: "ITEM" },
-      // { name: "ITEM_SWORD" },
-      { name: "SHIRT" },
-      { name: "SHOES" },
-      { name: "PANTS" },
-      { name: "AURA" }
+      { name: "BASEBODY" },  // 1
+      { name: "SKIN" },      // 2
+      { name: "ITEM" },      // 5
+      { name: "SHIRT" },     // 4
+      { name: "SHOES" },     // 4
+      { name: "PANTS" },     // 4
+      { name: "AURA" }       // 4
     ],
   },
   {
-    growEditionSizeTo: 6,
+    growEditionSizeTo: 10,
     layersOrder: [
       { name: "BASEBODY" },
       { name: "SKIN" },
       { name: "CLOTHES" },
       { name: "SCARF" },
-      { name: "NECKLACE" }
+      { name: "NECKLACE" },
+      { name: "AURA" }
     ],
   },
-  {
-    growEditionSizeTo: 9,
-    layersOrder: [
-      { name: "2_BASEBODY" },
-      { name: "2_ITEM" },
-      { name: "2_SHORT_SKIRT_AND_PANTS" },
-      { name: "2_CLOTHES" },
-      { name: "2_SHOULDER" },
-      { name: "2_BELT" }
-    ],
-  },
+  // {
+  //   growEditionSizeTo: 9,
+  //   layersOrder: [
+  //     { name: "2_BASEBODY" },
+  //     { name: "2_ITEM" },
+  //     { name: "2_SHORT_SKIRT_AND_PANTS" },
+  //     { name: "2_CLOTHES" },
+  //     { name: "2_SHOULDER" },
+  //     { name: "2_BELT" }
+  //   ],
+  // },
 ];
 
 const shuffleLayerConfigurations = false;
@@ -90,7 +90,7 @@ const text = {
 };
 
 const pixelFormat = {
-  ratio: 1 / 128,
+  ratio: 5 / 128,
 };
 
 const background = {
@@ -100,7 +100,10 @@ const background = {
   default: "#000000",
 };
 
-const extraMetadata = {};
+const extraMetadata = {
+  "miki": "siki",
+  creator: "Nemanja Miki",
+};
 
 const rarityDelimiter = "#";
 
