@@ -32,6 +32,7 @@ const layerConfigurations = [
       { name: "SHIRT" },     // 4
       { name: "SHOES" },     // 4
       { name: "PANTS" },     // 4
+      { name: "NECKLACE" },
       { name: "AURA" }       // 4
     ],
   },
